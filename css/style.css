@@ -55,6 +55,13 @@ button {
   border-radius: 10vw;
 }
 
+html {
+  cursor: url("../assets/cursor.svg"), auto;
+}
+html a:hover, html button:hover {
+  cursor: url("../assets/cursor.svg"), auto;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -65,7 +72,6 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: #20450D;
-  cursor: url("data:image/svg+xml,%3Csvg width='39' height='38' viewBox='0 0 39 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.690646 2.75663L14.5815 36.4527C15.2282 38.0215 17.5692 37.5845 17.659 35.8782L18.4944 20.0032C18.5373 19.1891 19.1846 18.5268 19.9977 18.465L36.6083 17.2028C38.307 17.0737 38.6955 14.7359 37.1209 14.1178L2.77745 0.635242C1.4646 0.119843 0.15322 1.45295 0.690646 2.75663Z' fill='%23EFA229'/%3E%3C/svg%3E%0A");
 }
 body .btns {
   font-family: "Caveat", serif;
@@ -154,4 +160,43 @@ body #Main_index #Construcao h2 {
 body #Main_index #Construcao img, body #Main_index #Construcao svg {
   z-index: -1;
   position: absolute;
+}
+
+@media only screen and (max-width: 479px) {
+  body {
+    min-height: 100svh;
+  }
+  body header {
+    height: 75px;
+    top: 15px;
+  }
+  body header #logo {
+    width: 55%;
+    margin-left: auto;
+  }
+  body main {
+    min-height: 100svh;
+    height: auto;
+  }
+  body main section {
+    width: 100%;
+    min-height: 100svh;
+  }
+  body footer {
+    bottom: 3svh;
+    justify-content: center;
+  }
+  body footer #LinksRapido a {
+    margin: 0 1vw;
+  }
+  body #Main_index #Construcao h1 {
+    font-size: 10vw;
+  }
+  body #Main_index #Construcao h2 {
+    font-size: 4.5vw;
+  }
+  body #Main_index #Construcao img, body #Main_index #Construcao svg {
+    width: 95%;
+    height: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
