@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Maven+Pro:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+  text-decoration: none !important;
+  list-style: none;
+}
+
+p, span, ul, li, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hide {
+  opacity: 0 !important;
+  display: none !important;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
+}
+
+.modal-backdrop {
+  opacity: 0.7 !important;
+}
+
+.modal {
+  --bs-modal-width: auto;
+  --bs-modal-padding: none;
+  --bs-modal-margin: none;
+  --bs-modal-color: $Branco;
+}
+.modal .modal-dialog .modal-content {
+  border: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+  background: #7EAA00;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #20450D;
+  border-radius: 10vw;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 99.6vw;
+  min-height: 100vh;
+  height: auto;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #20450D;
+  cursor: url("data:image/svg+xml,%3Csvg width='39' height='38' viewBox='0 0 39 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.690646 2.75663L14.5815 36.4527C15.2282 38.0215 17.5692 37.5845 17.659 35.8782L18.4944 20.0032C18.5373 19.1891 19.1846 18.5268 19.9977 18.465L36.6083 17.2028C38.307 17.0737 38.6955 14.7359 37.1209 14.1178L2.77745 0.635242C1.4646 0.119843 0.15322 1.45295 0.690646 2.75663Z' fill='%23EFA229'/%3E%3C/svg%3E%0A");
+}
+body .btns {
+  font-family: "Caveat", serif;
+  font-size: 1vw;
+  font-weight: 700;
+  padding: 0.55vh 1.5vw 0.65vh;
+  border-radius: 10vw;
+  background-color: #EFA229;
+  color: #E9DECD;
+  transition: all ease-in-out 0.2s;
+}
+body .btns:hover {
+  transform: scale(1.05);
+}
+body header {
+  width: 95%;
+  height: 85px;
+  position: fixed;
+  top: 35px;
+  padding: 10px 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body header #logo {
+  height: 100%;
+  width: 13%;
+  display: flex;
+  margin-right: auto;
+}
+body header #logo img, body header #logo svg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body main {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+}
+body main section {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  font-family: "Chelsea Market", serif;
+  color: #E9DECD;
+}
+body footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 5%;
+  position: absolute;
+  bottom: 0;
+}
+body footer #LinksRapido a {
+  margin: 0 0.35vw;
+}
+body footer #LinksRapido a img, body footer #LinksRapido a svg {
+  transition: all ease-in-out 0.2s;
+}
+body footer #LinksRapido a:hover img, body footer #LinksRapido a:hover svg {
+  transform: scale(1.15);
+}
+body #Main_index #Construcao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body #Main_index #Construcao h1 {
+  font-family: "Chelsea Market", serif;
+  font-size: 3.4vw;
+  text-shadow: 0px 10px 0.02px #20450D, 9.8px 2.1px 0.02px #20450D, 4.2px -9.1px 0.02px #20450D, -8px -6px 0.02px #20450D, -7.6px 6.5px 0.02px #20450D, 4.8px 8.8px 0.02px #20450D, 9.6px -2.8px 0.02px #20450D, -0.7px -10px 0.02px #20450D, -9.9px -1.5px 0.02px #20450D, -3.5px 9.4px 0.02px #20450D, 8.4px 5.4px 0.02px #20450D, 7.1px -7px 0.02px #20450D, -5.4px -8.4px 0.02px #20450D, -9.4px 3.5px 0.02px #20450D, 1.4px 9.9px 0.02px #20450D, 10px 0.8px 0.02px #20450D, 2.9px -9.6px 0.02px #20450D, -8.7px -4.8px 0.02px #20450D, -6.6px 7.5px 0.02px #20450D, 5.9px 8px 0.02px #20450D, 9.1px -4.1px 0.02px #20450D, -2.1px -9.8px 0.02px #20450D, -10px -0.1px 0.02px #20450D, -2.2px 9.8px 0.02px #20450D, 9.1px 4.2px 0.02px #20450D, 6.1px -8px 0.02px #20450D, -6.5px -7.6px 0.02px #20450D, -8.8px 4.7px 0.02px #20450D, 2.7px 9.6px 0.02px #20450D, 10px -0.6px 0.02px #20450D, 1.5px -9.9px 0.02px #20450D, -9.3px -3.6px 0.02px #20450D, -5.5px 8.4px 0.02px #20450D, 7px 7.2px 0.02px #20450D, 8.5px -5.3px 0.02px #20450D, -3.4px -9.4px 0.02px #20450D, -9.9px 1.3px 0.02px #20450D, -0.8px 10px 0.02px #20450D, 9.6px 2.9px 0.02px #20450D, 4.9px -8.7px 0.02px #20450D, -7.5px -6.7px 0.02px #20450D, -8.1px 5.9px 0.02px #20450D, 4px 9.2px 0.02px #20450D, 9.8px -2px 0.02px #20450D, 0.2px -10px 0.02px #20450D, -9.7px -2.3px 0.02px #20450D, -4.3px 9px 0.02px #20450D, 7.9px 6.1px 0.02px #20450D;
+}
+body #Main_index #Construcao h2 {
+  font-family: "Josefin Sans", serif;
+  font-size: 1.75vw;
+  text-shadow: 0px 10px 0.02px #20450D, 9.8px 2.1px 0.02px #20450D, 4.2px -9.1px 0.02px #20450D, -8px -6px 0.02px #20450D, -7.6px 6.5px 0.02px #20450D, 4.8px 8.8px 0.02px #20450D, 9.6px -2.8px 0.02px #20450D, -0.7px -10px 0.02px #20450D, -9.9px -1.5px 0.02px #20450D, -3.5px 9.4px 0.02px #20450D, 8.4px 5.4px 0.02px #20450D, 7.1px -7px 0.02px #20450D, -5.4px -8.4px 0.02px #20450D, -9.4px 3.5px 0.02px #20450D, 1.4px 9.9px 0.02px #20450D, 10px 0.8px 0.02px #20450D, 2.9px -9.6px 0.02px #20450D, -8.7px -4.8px 0.02px #20450D, -6.6px 7.5px 0.02px #20450D, 5.9px 8px 0.02px #20450D, 9.1px -4.1px 0.02px #20450D, -2.1px -9.8px 0.02px #20450D, -10px -0.1px 0.02px #20450D, -2.2px 9.8px 0.02px #20450D, 9.1px 4.2px 0.02px #20450D, 6.1px -8px 0.02px #20450D, -6.5px -7.6px 0.02px #20450D, -8.8px 4.7px 0.02px #20450D, 2.7px 9.6px 0.02px #20450D, 10px -0.6px 0.02px #20450D, 1.5px -9.9px 0.02px #20450D, -9.3px -3.6px 0.02px #20450D, -5.5px 8.4px 0.02px #20450D, 7px 7.2px 0.02px #20450D, 8.5px -5.3px 0.02px #20450D, -3.4px -9.4px 0.02px #20450D, -9.9px 1.3px 0.02px #20450D, -0.8px 10px 0.02px #20450D, 9.6px 2.9px 0.02px #20450D, 4.9px -8.7px 0.02px #20450D, -7.5px -6.7px 0.02px #20450D, -8.1px 5.9px 0.02px #20450D, 4px 9.2px 0.02px #20450D, 9.8px -2px 0.02px #20450D, 0.2px -10px 0.02px #20450D, -9.7px -2.3px 0.02px #20450D, -4.3px 9px 0.02px #20450D, 7.9px 6.1px 0.02px #20450D;
+}
+body #Main_index #Construcao img, body #Main_index #Construcao svg {
+  z-index: -1;
+  position: absolute;
+}/*# sourceMappingURL=style.css.map */

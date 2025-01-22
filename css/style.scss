@@ -1,0 +1,126 @@
+@import 'colors_fonts';
+@import 'base';
+
+::-webkit-scrollbar {
+    width: 0.5vw;
+    background: $VerdeClaro;
+}
+::-webkit-scrollbar-thumb {
+    background: $VerdeEscuro;
+    border-radius: 10vw;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 99.6vw;
+    min-height: 100vh;
+    height: auto;
+    overflow-x: hidden;
+    position: relative;
+    background-color: $VerdeEscuro;
+    cursor: url("data:image/svg+xml,%3Csvg width='39' height='38' viewBox='0 0 39 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.690646 2.75663L14.5815 36.4527C15.2282 38.0215 17.5692 37.5845 17.659 35.8782L18.4944 20.0032C18.5373 19.1891 19.1846 18.5268 19.9977 18.465L36.6083 17.2028C38.307 17.0737 38.6955 14.7359 37.1209 14.1178L2.77745 0.635242C1.4646 0.119843 0.15322 1.45295 0.690646 2.75663Z' fill='%23EFA229'/%3E%3C/svg%3E%0A");
+    .btns{
+        font-family: $Main-text;
+        font-size: 1vw;
+        font-weight: 700;
+        padding: 0.55vh 1.5vw 0.65vh;
+        border-radius: 10vw;
+        background-color: $Amarelo;
+        color: $Branco;
+        transition: all ease-in-out 0.2s;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    
+    header{ 
+        width: 95%;
+        height: 85px;
+        position: fixed;
+        top: 35px;
+        padding: 10px 0;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #logo{
+            height: 100%;
+            width: 13%;
+            display: flex;
+            margin-right: auto;
+            img, svg{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    main{
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        position: relative;
+        section{
+            width: 100%;
+            min-height: 100vh;
+            height: auto;
+            font-family: $Main-font;
+            color: $Branco;
+        }
+    }
+    footer{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding: 0 5%;
+        position: absolute;
+        bottom: 0;
+        #LinksRapido{
+            a{
+                margin: 0 0.35vw;
+                img,svg{
+                    transition: all ease-in-out 0.2s;
+                }
+                &:hover{
+                    img,svg{
+                        transform: scale(1.15);
+                    }
+
+                }
+            }
+        }
+    }
+
+    #Main_index{
+        #Construcao{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h1{
+                font-family: $Main-font;
+                font-size: 3.4vw;
+                text-shadow: 0.0px 10.0px 0.02px $VerdeEscuro, 9.8px 2.1px 0.02px $VerdeEscuro, 4.2px -9.1px 0.02px $VerdeEscuro, -8.0px -6.0px 0.02px $VerdeEscuro, -7.6px 6.5px 0.02px $VerdeEscuro, 4.8px 8.8px 0.02px $VerdeEscuro, 9.6px -2.8px 0.02px $VerdeEscuro, -0.7px -10.0px 0.02px $VerdeEscuro, -9.9px -1.5px 0.02px $VerdeEscuro, -3.5px 9.4px 0.02px $VerdeEscuro, 8.4px 5.4px 0.02px $VerdeEscuro, 7.1px -7.0px 0.02px $VerdeEscuro, -5.4px -8.4px 0.02px $VerdeEscuro, -9.4px 3.5px 0.02px $VerdeEscuro, 1.4px 9.9px 0.02px $VerdeEscuro, 10.0px 0.8px 0.02px $VerdeEscuro, 2.9px -9.6px 0.02px $VerdeEscuro, -8.7px -4.8px 0.02px $VerdeEscuro, -6.6px 7.5px 0.02px $VerdeEscuro, 5.9px 8.0px 0.02px $VerdeEscuro, 9.1px -4.1px 0.02px $VerdeEscuro, -2.1px -9.8px 0.02px $VerdeEscuro, -10.0px -0.1px 0.02px $VerdeEscuro, -2.2px 9.8px 0.02px $VerdeEscuro, 9.1px 4.2px 0.02px $VerdeEscuro, 6.1px -8.0px 0.02px $VerdeEscuro, -6.5px -7.6px 0.02px $VerdeEscuro, -8.8px 4.7px 0.02px $VerdeEscuro, 2.7px 9.6px 0.02px $VerdeEscuro, 10.0px -0.6px 0.02px $VerdeEscuro, 1.5px -9.9px 0.02px $VerdeEscuro, -9.3px -3.6px 0.02px $VerdeEscuro, -5.5px 8.4px 0.02px $VerdeEscuro, 7.0px 7.2px 0.02px $VerdeEscuro, 8.5px -5.3px 0.02px $VerdeEscuro, -3.4px -9.4px 0.02px $VerdeEscuro, -9.9px 1.3px 0.02px $VerdeEscuro, -0.8px 10.0px 0.02px $VerdeEscuro, 9.6px 2.9px 0.02px $VerdeEscuro, 4.9px -8.7px 0.02px $VerdeEscuro, -7.5px -6.7px 0.02px $VerdeEscuro, -8.1px 5.9px 0.02px $VerdeEscuro, 4.0px 9.2px 0.02px $VerdeEscuro, 9.8px -2.0px 0.02px $VerdeEscuro, 0.2px -10.0px 0.02px $VerdeEscuro, -9.7px -2.3px 0.02px $VerdeEscuro, -4.3px 9.0px 0.02px $VerdeEscuro, 7.9px 6.1px 0.02px $VerdeEscuro
+            }
+            h2{
+                font-family: $Second-text;
+                font-size: 1.75vw;
+                text-shadow: 0.0px 10.0px 0.02px $VerdeEscuro, 9.8px 2.1px 0.02px $VerdeEscuro, 4.2px -9.1px 0.02px $VerdeEscuro, -8.0px -6.0px 0.02px $VerdeEscuro, -7.6px 6.5px 0.02px $VerdeEscuro, 4.8px 8.8px 0.02px $VerdeEscuro, 9.6px -2.8px 0.02px $VerdeEscuro, -0.7px -10.0px 0.02px $VerdeEscuro, -9.9px -1.5px 0.02px $VerdeEscuro, -3.5px 9.4px 0.02px $VerdeEscuro, 8.4px 5.4px 0.02px $VerdeEscuro, 7.1px -7.0px 0.02px $VerdeEscuro, -5.4px -8.4px 0.02px $VerdeEscuro, -9.4px 3.5px 0.02px $VerdeEscuro, 1.4px 9.9px 0.02px $VerdeEscuro, 10.0px 0.8px 0.02px $VerdeEscuro, 2.9px -9.6px 0.02px $VerdeEscuro, -8.7px -4.8px 0.02px $VerdeEscuro, -6.6px 7.5px 0.02px $VerdeEscuro, 5.9px 8.0px 0.02px $VerdeEscuro, 9.1px -4.1px 0.02px $VerdeEscuro, -2.1px -9.8px 0.02px $VerdeEscuro, -10.0px -0.1px 0.02px $VerdeEscuro, -2.2px 9.8px 0.02px $VerdeEscuro, 9.1px 4.2px 0.02px $VerdeEscuro, 6.1px -8.0px 0.02px $VerdeEscuro, -6.5px -7.6px 0.02px $VerdeEscuro, -8.8px 4.7px 0.02px $VerdeEscuro, 2.7px 9.6px 0.02px $VerdeEscuro, 10.0px -0.6px 0.02px $VerdeEscuro, 1.5px -9.9px 0.02px $VerdeEscuro, -9.3px -3.6px 0.02px $VerdeEscuro, -5.5px 8.4px 0.02px $VerdeEscuro, 7.0px 7.2px 0.02px $VerdeEscuro, 8.5px -5.3px 0.02px $VerdeEscuro, -3.4px -9.4px 0.02px $VerdeEscuro, -9.9px 1.3px 0.02px $VerdeEscuro, -0.8px 10.0px 0.02px $VerdeEscuro, 9.6px 2.9px 0.02px $VerdeEscuro, 4.9px -8.7px 0.02px $VerdeEscuro, -7.5px -6.7px 0.02px $VerdeEscuro, -8.1px 5.9px 0.02px $VerdeEscuro, 4.0px 9.2px 0.02px $VerdeEscuro, 9.8px -2.0px 0.02px $VerdeEscuro, 0.2px -10.0px 0.02px $VerdeEscuro, -9.7px -2.3px 0.02px $VerdeEscuro, -4.3px 9.0px 0.02px $VerdeEscuro, 7.9px 6.1px 0.02px $VerdeEscuro
+            }
+            img, svg{
+                z-index: -1;
+                position: absolute;
+            }
+        }
+    }
+
+   
+}
+
+@media only screen and (max-width: 479px){
+    
+}
