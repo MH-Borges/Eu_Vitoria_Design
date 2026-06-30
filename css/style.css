@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Maven+Pro:wght@400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@font-face {
+  font-family: "Brasilero";
+  font-weight: 400;
+  src: url(..assets/font/Brasilero2018Free.otf);
+}
 *,
 *::after,
 *::before {
@@ -67,41 +72,28 @@ body {
   flex-direction: column;
   align-items: center;
   width: 99.6vw;
-  min-height: 100vh;
+  min-height: 10vh;
   height: auto;
   overflow-x: hidden;
   position: relative;
-  background-color: #20450D;
-}
-body .btns {
-  font-family: "Caveat", serif;
-  font-size: 1vw;
-  font-weight: 700;
-  padding: 0.55vh 1.5vw 0.65vh;
-  border-radius: 10vw;
-  background-color: #EFA229;
-  color: #E9DECD;
-  transition: all ease-in-out 0.2s;
-}
-body .btns:hover {
-  transform: scale(1.05);
+  background-color: #E9DECD;
 }
 body header {
-  width: 95%;
-  height: 85px;
+  width: 100%;
+  height: 100px;
   position: fixed;
-  top: 35px;
-  padding: 10px 0;
+  left: 0;
   z-index: 99;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 body header #logo {
-  height: 100%;
-  width: 13%;
+  height: auto;
+  width: 11%;
   display: flex;
   margin-right: auto;
+  margin-left: 4vw;
 }
 body header #logo img, body header #logo svg {
   width: 100%;
@@ -109,22 +101,208 @@ body header #logo img, body header #logo svg {
   -o-object-fit: contain;
      object-fit: contain;
 }
-body main {
-  width: 100%;
-  min-height: 100vh;
-  height: auto;
+body header #logo img :first-child, body header #logo svg :first-child {
+  fill: #20450D;
+}
+body header #logo img :nth-child(2), body header #logo svg :nth-child(2) {
+  fill: #EFA229;
+  stroke: #EFA229;
+}
+body header #OpenMenu {
+  width: 6vh;
+  height: 6vh;
+  margin-left: auto;
+  margin-right: 4vw;
   position: relative;
 }
+body header #OpenMenu::before, body header #OpenMenu::after {
+  position: absolute;
+  content: "";
+  top: 30%;
+  left: 12.5%;
+  width: 75%;
+  height: 15%;
+  background-color: #20450D;
+  border-radius: 10vw;
+}
+body header #OpenMenu::after {
+  top: 55%;
+}
+body header #sideMenu {
+  background-color: #20450D;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  right: -100vw;
+  transition: right 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+body header #sideMenu a {
+  font-family: "Chelsea Market", serif;
+  font-size: 1.2vw;
+  color: #E9DECD;
+  margin: 0 1vw;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+body header #sideMenu a:hover {
+  color: #EFA229;
+  transform: scale(1.05);
+}
+body header #sideMenu #CloseMenu {
+  width: 5vh;
+  height: 5vh;
+  position: relative;
+  margin-right: 3vw;
+  margin-left: 1vw;
+  transition: all 0.25s ease-in-out;
+}
+body header #sideMenu #CloseMenu::before, body header #sideMenu #CloseMenu::after {
+  position: absolute;
+  content: "";
+  top: 40%;
+  left: 15%;
+  width: 75%;
+  height: 22.5%;
+  background-color: #EFA229;
+  border-radius: 10vw;
+  transform: rotate(-45deg);
+}
+body header #sideMenu #CloseMenu::after {
+  transform: rotate(45deg);
+}
+body header #sideMenu #CloseMenu:hover {
+  transform: scale(1.05);
+}
+body main {
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  position: absolute;
+  left: 0;
+}
 body main section {
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   min-height: 100vh;
   height: auto;
-  font-family: "Chelsea Market", serif;
+  font-family: "Caveat", serif;
   color: #E9DECD;
+}
+body main #banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 92.5%;
+  height: 100vh;
+}
+body main #banner #infos {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body main #banner #infos #BannerTitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 25vh;
+}
+body main #banner #infos #BannerTitle h1 {
+  width: 100%;
+  height: auto;
+  color: #20450D;
+  font-family: "Chelsea Market", serif;
+  font-size: 9vw;
+  margin-left: 4vw;
+}
+body main #banner #infos #BannerTitle img, body main #banner #infos #BannerTitle svg {
+  position: absolute;
+  transform: translateY(20px);
+}
+body main #banner #infos #BannerTitle #BigStar {
+  left: 10vw;
+  width: 4vw;
+  height: 4vw;
+}
+body main #banner #infos #BannerTitle #Smile {
+  left: 27.25vw;
+  width: 3.25vw;
+  height: 3.25vw;
+}
+body main #banner #infos #BannerTitle #SmallStar {
+  left: 37.5vw;
+  width: 4.5vw;
+  height: 4.5vw;
+}
+body main #banner #infos #BannerSubtitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  transform: translateY(-15px);
+}
+body main #banner #infos #BannerSubtitle h2 {
+  color: #20450D;
+  font-family: "Chelsea Market", serif;
+  font-size: 2.1vw;
+  padding-left: 1.25vw;
+}
+body main #banner #infos #BannerSubtitle img, body main #banner #infos #BannerSubtitle svg {
+  position: absolute;
+}
+body main #banner #infos #BannerSubtitle #Underline {
+  width: 24vw;
+  height: auto;
+  transform: translate(365px, 35px);
+}
+body main #banner #infos #BannerSubtitle #ArrowDown {
+  width: 5vw;
+  height: auto;
+  transform: translate(220px, 140px);
+}
+body main #banner #infos #BannerSubtitle a {
+  color: #EFA229;
+  font-size: 4vw;
+  position: absolute;
+  transform: translate(350px, 180px);
+  z-index: 999;
+}
+body main #banner #infos #BannerSubtitle a:hover {
+  color: #20450D;
+  transform: translate(350px, 180px), scale(1.05);
+}
+body main #banner #arte {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main #banner #arte h2 {
+  color: #EFA229;
+  font-family: "Caveat", serif;
+  font-size: 4vw;
+  position: absolute;
+  transform: translate(-410px, 40px);
+}
+body main #banner #arte #ArrowUp {
+  position: absolute;
+  transform: translate(-170px, 70px);
+}
+body main #banner #arte #FullArte {
+  position: absolute;
+  width: 135%;
+  height: auto;
+  transform: translate(-235px, 190px);
 }
 body footer {
   width: 100%;
-  height: 10vh;
+  min-height: 10vh;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -140,63 +318,4 @@ body footer #LinksRapido a img, body footer #LinksRapido a svg {
 }
 body footer #LinksRapido a:hover img, body footer #LinksRapido a:hover svg {
   transform: scale(1.15);
-}
-body #Main_index #Construcao {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-body #Main_index #Construcao h1 {
-  font-family: "Chelsea Market", serif;
-  font-size: 3.4vw;
-  text-shadow: 0px 10px 0.02px #20450D, 9.8px 2.1px 0.02px #20450D, 4.2px -9.1px 0.02px #20450D, -8px -6px 0.02px #20450D, -7.6px 6.5px 0.02px #20450D, 4.8px 8.8px 0.02px #20450D, 9.6px -2.8px 0.02px #20450D, -0.7px -10px 0.02px #20450D, -9.9px -1.5px 0.02px #20450D, -3.5px 9.4px 0.02px #20450D, 8.4px 5.4px 0.02px #20450D, 7.1px -7px 0.02px #20450D, -5.4px -8.4px 0.02px #20450D, -9.4px 3.5px 0.02px #20450D, 1.4px 9.9px 0.02px #20450D, 10px 0.8px 0.02px #20450D, 2.9px -9.6px 0.02px #20450D, -8.7px -4.8px 0.02px #20450D, -6.6px 7.5px 0.02px #20450D, 5.9px 8px 0.02px #20450D, 9.1px -4.1px 0.02px #20450D, -2.1px -9.8px 0.02px #20450D, -10px -0.1px 0.02px #20450D, -2.2px 9.8px 0.02px #20450D, 9.1px 4.2px 0.02px #20450D, 6.1px -8px 0.02px #20450D, -6.5px -7.6px 0.02px #20450D, -8.8px 4.7px 0.02px #20450D, 2.7px 9.6px 0.02px #20450D, 10px -0.6px 0.02px #20450D, 1.5px -9.9px 0.02px #20450D, -9.3px -3.6px 0.02px #20450D, -5.5px 8.4px 0.02px #20450D, 7px 7.2px 0.02px #20450D, 8.5px -5.3px 0.02px #20450D, -3.4px -9.4px 0.02px #20450D, -9.9px 1.3px 0.02px #20450D, -0.8px 10px 0.02px #20450D, 9.6px 2.9px 0.02px #20450D, 4.9px -8.7px 0.02px #20450D, -7.5px -6.7px 0.02px #20450D, -8.1px 5.9px 0.02px #20450D, 4px 9.2px 0.02px #20450D, 9.8px -2px 0.02px #20450D, 0.2px -10px 0.02px #20450D, -9.7px -2.3px 0.02px #20450D, -4.3px 9px 0.02px #20450D, 7.9px 6.1px 0.02px #20450D;
-}
-body #Main_index #Construcao h2 {
-  font-family: "Josefin Sans", serif;
-  font-size: 1.75vw;
-  text-shadow: 0px 10px 0.02px #20450D, 9.8px 2.1px 0.02px #20450D, 4.2px -9.1px 0.02px #20450D, -8px -6px 0.02px #20450D, -7.6px 6.5px 0.02px #20450D, 4.8px 8.8px 0.02px #20450D, 9.6px -2.8px 0.02px #20450D, -0.7px -10px 0.02px #20450D, -9.9px -1.5px 0.02px #20450D, -3.5px 9.4px 0.02px #20450D, 8.4px 5.4px 0.02px #20450D, 7.1px -7px 0.02px #20450D, -5.4px -8.4px 0.02px #20450D, -9.4px 3.5px 0.02px #20450D, 1.4px 9.9px 0.02px #20450D, 10px 0.8px 0.02px #20450D, 2.9px -9.6px 0.02px #20450D, -8.7px -4.8px 0.02px #20450D, -6.6px 7.5px 0.02px #20450D, 5.9px 8px 0.02px #20450D, 9.1px -4.1px 0.02px #20450D, -2.1px -9.8px 0.02px #20450D, -10px -0.1px 0.02px #20450D, -2.2px 9.8px 0.02px #20450D, 9.1px 4.2px 0.02px #20450D, 6.1px -8px 0.02px #20450D, -6.5px -7.6px 0.02px #20450D, -8.8px 4.7px 0.02px #20450D, 2.7px 9.6px 0.02px #20450D, 10px -0.6px 0.02px #20450D, 1.5px -9.9px 0.02px #20450D, -9.3px -3.6px 0.02px #20450D, -5.5px 8.4px 0.02px #20450D, 7px 7.2px 0.02px #20450D, 8.5px -5.3px 0.02px #20450D, -3.4px -9.4px 0.02px #20450D, -9.9px 1.3px 0.02px #20450D, -0.8px 10px 0.02px #20450D, 9.6px 2.9px 0.02px #20450D, 4.9px -8.7px 0.02px #20450D, -7.5px -6.7px 0.02px #20450D, -8.1px 5.9px 0.02px #20450D, 4px 9.2px 0.02px #20450D, 9.8px -2px 0.02px #20450D, 0.2px -10px 0.02px #20450D, -9.7px -2.3px 0.02px #20450D, -4.3px 9px 0.02px #20450D, 7.9px 6.1px 0.02px #20450D;
-}
-body #Main_index #Construcao img, body #Main_index #Construcao svg {
-  z-index: -1;
-  position: absolute;
-}
-
-@media only screen and (max-width: 479px) {
-  body {
-    min-height: 100svh;
-  }
-  body header {
-    height: 75px;
-    top: 15px;
-  }
-  body header #logo {
-    width: 55%;
-    margin-left: auto;
-  }
-  body main {
-    min-height: 100svh;
-    height: auto;
-  }
-  body main section {
-    width: 100%;
-    min-height: 100svh;
-  }
-  body footer {
-    bottom: 3svh;
-    justify-content: center;
-  }
-  body footer #LinksRapido a {
-    margin: 0 1vw;
-  }
-  body #Main_index #Construcao h1 {
-    font-size: 10vw;
-  }
-  body #Main_index #Construcao h2 {
-    font-size: 4.5vw;
-  }
-  body #Main_index #Construcao img, body #Main_index #Construcao svg {
-    width: 95%;
-    height: 100%;
-  }
 }/*# sourceMappingURL=style.css.map */

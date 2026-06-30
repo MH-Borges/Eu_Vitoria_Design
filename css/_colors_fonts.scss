@@ -2,9 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-$Main-font: "Chelsea Market", serif;
-$Main-text: "Caveat", serif;
-$Second-text: "Josefin Sans", serif;
+@font-face{
+    font-family: "Brasilero";
+    font-weight: 400;
+    src:url(..assets/font/Brasilero2018Free.otf);
+}
+
+
+$Title-font: "Chelsea Market", serif;
+$Main-font: "Caveat", serif;
+$Text-font: "Josefin Sans", serif;
+$Detail-font: "Brasilero", serif;
 
 /////// pesos
 // thin = 200

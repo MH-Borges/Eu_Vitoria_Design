@@ -19,19 +19,11 @@
     <meta name="og:image" property="og:image" content="assets/Banner_share.webp">
     <meta property="og:description" content="">
 
-
-    <!-- jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- SVG Inject -->
     <script src="js/svg-inject.min.js"></script>
-
-    <!-- Mask -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
 
     <!-- Main files -->
     <link rel="stylesheet" href="css/style.css">
@@ -40,24 +32,123 @@
 
 <body>
     <header>
-        <div id="logo"><img src="assets/Logo.svg" onload="SVGInject(this)"></div>
-    </header>
-    <main id="Main_index">
-        <section id="Construcao">
-                <h1 id="titleMain">Em construção..</h1>
-                <h2 id="titleSub">o site está quase pronto!</h2>
-                <img src="assets/Icon_vazado.svg" onload="SVGInject(this)">
-        </section>
-    </main>
-    <footer>
-        <div id="LinksRapido">
-            <a href="" target="_blank"><Img src="assets/insta.svg" onload="SVGInject(this)"></Img></a>
-            <a href="" target="_blank"><Img src="assets/LinkedIn.svg" onload="SVGInject(this)"></Img></a>
-            <a href="" target="_blank"><Img src="assets/Behance.svg" onload="SVGInject(this)"></Img></a>
-            <a href="" target="_blank"><Img src="assets/WhatsApp.svg" onload="SVGInject(this)"></Img></a>
-            <a href="" target="_blank"><Img src="assets/E-mail.svg" onload="SVGInject(this)"></Img></a>
+        <a href="#banner" id="logo"><img src="assets/Logo.svg" onload="SVGInject(this)"></a>
+        <button id="OpenMenu" onclick="sideMenu()"></button>
+
+        <!-- <div id="sideMenu" class="hide"> -->
+        <div id="sideMenu">
+            <a href="#objetivos">sobre mim</a>
+            <a href="#projetos">projetos</a>
+            <a href="#formacao">formação</a>
+            <a href="#habilidades">habilidades</a>
+            <a href="#experiências">experiências</a>
+            <a href="Curriculo Julia Vitoria Moreno Emerenciano.pdf" download="Curriculo Julia Vitoria Moreno Emerenciano.pdf">meu currículo</a>
+           
+            <button id="CloseMenu" onclick="sideMenu()"></button>
         </div>
+    </header>
+    <main>
+        <section id="banner">
+            <div id="infos">
+                <div id="BannerTitle">
+                    <h1>Portfólio</h1>
+                    <img id="BigStar" src="assets/B_BigStar.svg" onload="SVGInject(this)">
+                    <img id="Smile" src="assets/B_Smile.svg" onload="SVGInject(this)">
+                    <img id="SmallStar" src="assets/B_SmallStar.svg" onload="SVGInject(this)">
+                </div>
+                <div id="BannerSubtitle">
+                    <h2>design | comunicação visual | ilustração</h2>
+                    <img id="Underline" src="assets/B_Underline.svg" onload="SVGInject(this)">
+                    <img id="ArrowDown" src="assets/B_ArrowDown.svg" onload="SVGInject(this)">
+                    <a href="Curriculo Julia Vitoria Moreno Emerenciano.pdf" download="Curriculo Julia Vitoria Moreno Emerenciano.pdf">+currículo</a>
+                </div>
+            </div>
+            <div id="arte">
+                <h2>Júlia Vitória</h2>
+                <img id="ArrowUp" src="assets/B_ArrowUp.svg" onload="SVGInject(this)">
+                <img id="FullArte" src="assets/B_FullArte.svg" onload="SVGInject(this)">
+            </div>
+        </section>
+
+        <section id="objetivos">
+            <img id="" src="assets/Logo.svg" onload="SVGInject(this)">
+
+            <h2>Meus objetivos</h2>
+            <img id="" src="assets/Logo.svg" onload="SVGInject(this)">
+            <div class="txts_obj">
+                <p>Apaixonada por criar, sou atuante como designer gráfica e editorial, ilustradora, artista e comunicadora visual. Trago em minha bagagem uma atenção natural aos detalhes, tendo como objetivo principal inspirar pessoas através do meu trabalho.</p>
+                <p>Ao longo da minha carreira, tive a oportunidade de dar vida para várias marcas embrionárias, que refletem minha habilidade em combinar um bom visual com funcionalidade. Com isso, constantemente, mergulho em desafios de UX, UI e design editorial, explorando meu fascínio por criar e organizar informações de maneira intuitiva em espaços e telas.</p>
+            </div>
+            <div class="txts_obj">
+                <p>Vejo a comunicação visual fora do padrão, como parte integrante de todo projeto e arte. Acredito fielmente que toda marca tem sua personalidade própria, assim como projetos independentes. Assim, busco incorporar em todos os projetos, sua essência singular com uma estética tão ímpar quanto.</p>
+                <p>Estou sempre em busca de desafios que me permitam expressar minha criatividade e paixão por detalhes, essências e organização, no meio do design editorial ou gráfico, e estou aberta a oportunidades que me permitam continuar expandindo meus horizontes, algo que nunca me deixe estática.</p>
+            </div>
+        </section>
+
+        <section id="processo">
+            <h2>Processo geral</h2>
+
+            <div id="">
+                <h3>Briefing</h3>
+                <img id="" src="assets/Logo.svg" onload="SVGInject(this)">
+            </div>
+
+            <div id="">
+                <h3>Pesquisa Referencial</h3>
+                <img id="" src="assets/Logo.svg" onload="SVGInject(this)">
+            </div>
+
+            <div id="">
+                <h3>Desenvolvimento</h3>
+                <img id="" src="assets/Logo.svg" onload="SVGInject(this)">
+            </div>
+
+            <div id="">
+                <h3>Apresentação</h3>
+                <img id="" src="assets/Logo.svg" onload="SVGInject(this)">
+            </div>
+
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos preferidos</h2>
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <p>Veja alguns dos meus projetos preferidos. Você pode me seguir:</p>
+                    <div id="">
+                        <a href="" class=""></a>
+                        <a href="" class=""></a>
+                        <a href="" class=""></a>
+                        <a href="" class=""></a>
+                        <a href="" class=""></a>
+                    </div>
+                    <button class="nav-link active" id="nav-tcc-tab" data-bs-toggle="tab" data-bs-target="#nav-tcc" aria-selected="true">TCC</button>
+                    <button class="nav-link" id="nav-idvisual-tab" data-bs-toggle="tab" data-bs-target="#nav-idvisual" aria-selected="false">Identidades visuais</button>
+                    <button class="nav-link" id="nav-cplivros-tab" data-bs-toggle="tab" data-bs-target="#nav-cplivros" aria-selected="false">Capas de livros</button>
+                    <button class="nav-link" id="nav-ilustras-tab" data-bs-toggle="tab" data-bs-target="#nav-ilustras" aria-selected="false">Ilustrações</button>
+                    <button class="nav-link" id="nav-infogra-tab" data-bs-toggle="tab" data-bs-target="#nav-infogra" aria-selected="false">Infográficos</button>
+                    <button class="nav-link" id="nav-curso-tab" data-bs-toggle="tab" data-bs-target="#nav-curso" aria-selected="false">Durante o curso</button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-tcc" role="tabpanel">...</div>
+                <div class="tab-pane fade" id="nav-idvisual" role="tabpanel">...</div>
+                <div class="tab-pane fade" id="nav-cplivros" role="tabpanel">...</div>
+                <div class="tab-pane fade" id="nav-ilustras" role="tabpanel">...</div>
+                <div class="tab-pane fade" id="nav-infogra" role="tabpanel">...</div>
+                <div class="tab-pane fade" id="nav-curso" role="tabpanel">...</div>
+            </div>
+        </section>
+        
+        <section id="formacao"></section>
+    </main>
+
+    <footer>
+        
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
