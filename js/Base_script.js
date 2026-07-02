@@ -18,7 +18,7 @@ function sideMenu() {
     }
 }
 
-/*ROLAMENTO MENU*/ 
+//ROLAMENTO MENU 
 document.querySelectorAll('header a[href^="#"]').forEach(link => {
     link.addEventListener("click", event => {
         event.preventDefault();
@@ -33,4 +33,14 @@ document.querySelectorAll('header a[href^="#"]').forEach(link => {
         });
     });
 });
-/*ROLAMENTO MENU*/
+
+
+
+window.addEventListener('scroll', function() {
+    if(window.pageYOffset > 1900){
+        document.querySelector("#letras_logo--inject-1").style.fill = "#E9DECD";
+    }
+    else{
+        document.querySelector("#letras_logo--inject-1").style.fill = "";
+    }
+});
